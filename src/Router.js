@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Public from './Public';
 import Protected from './Protected';
 import Profile from './Profile';
+import { Pacman } from './Pacman';
 
 
 const Router = () => {
@@ -27,6 +28,7 @@ const Router = () => {
             <Nav current = {current} />
             <Routes>
                 <Route exact path="/" element={<Public />} />
+                <Route exact path="/pacman" element={<Pacman />} />
                 <Route exact path="/protected" element={<Protected />} />
                 <Route exact path="/profile" element={<Profile />} />
                 <Route element={<Public />} />
